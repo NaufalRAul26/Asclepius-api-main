@@ -16,7 +16,7 @@ const upload = multer({
 // Load model TensorFlow.js dari Google Cloud Storage
 let model;
 async function loadModel() {
-  model = await tf.loadGraphModel('https://storage.googleapis.com/asclepius-bucket-dgs/model/model.json');
+  model = await tf.loadGraphModel('https://storage.googleapis.com/bucket-cancer-fal/model.json');
   console.log('Model loaded successfully');
 }
 loadModel();
